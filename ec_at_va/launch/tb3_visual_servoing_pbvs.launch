@@ -1,0 +1,17 @@
+<launch>
+    <include file="/home/starwars/catkin_ws/src/ec_at_va/launch/tb3_transformations.launch"/>
+    <include file="/home/starwars/catkin_ws/src/ec_at_va/launch/get_point_from_message.launch"/>
+    <arg name="K_eu" default="0.25" />
+    <arg name="K_ev" default="0.25" />
+    <arg name="camera_height" default="0.1"/>   
+    <node name="visual_servoing" 
+        pkg="ec_at_va" 
+        type="visual_servoing_pbvs.py"
+        args="$(arg K_eu) $(arg K_ev) $(arg camera_height)"
+        output="screen">
+        <remap from="img_point" to="/camera/img_base"/>
+        <remap from="camera_info" to="/camera/rgb/camera_info"/>
+        <remap from="odom" to="/odom"/>
+        <remap from="cmd_vel" to="/cmd_vel"/>
+	</node>
+</launch>

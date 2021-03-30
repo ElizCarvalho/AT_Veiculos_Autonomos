@@ -1,0 +1,8 @@
+<launch>
+    <node name="tb3_tf_broadcast" 
+        pkg="ec_at_va" 
+        type="tb3_tf_broadcast.py"
+        output="screen">
+	    <remap from="odom" to="/odom"/>
+	</node>
+</launch>

@@ -1,5 +1,3 @@
-# AT_Veiculos_Autonomos
-
 #### Instituto Infnet
 #### Disicplina: Veículos Autônomos
 #### Prof.: M.e. Adalberto Oliveira

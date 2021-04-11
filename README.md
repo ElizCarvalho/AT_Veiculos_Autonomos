@@ -7,19 +7,17 @@ Qst1- Durante a disciplina foram trabalhadas as etapas que permitem que um veíc
 
 O trabalho deverá atender aos seguintes requisitos:
 
-Encontrar um objeto posicionado dentro do simulador, desde que dentro do limite de visão da câmera;
-Segmentar os objetos para extrair os seus atributos;
-Extrair o atributo “Ponto da Base” e sua coordenada em pixel;
-Encontrar a distância entre este ponto e o robô;
-Transformar o ponto do referencial da imagem para o referencial do mundo e utilizar como coordenada de destino;
-Controlar o robô de forma que ele chegue em um ponto a 30cm de distância da coordenada da base do objeto (regulação parcial);
-Exibir as telas de imagem original, máscara de segmentação e imagem processada;
-Informar a distância entre o robô e o objeto de destino, coordenada em pixel do ponto da base e a coordenada do objeto no mundo, ou por impressão no terminal ou por publicação no ROS (info ou publicação de mensagem);
-A aplicação deverá ser executada a partir de um arquivo *.launch, que deverá iniciar todos os nós do projeto, caso seja utilizado mais de um nó, assumindo que o simulador já esteja em execução. Os seguintes elementos deverão ser entregues como parte da avaliação:
+- Encontrar um objeto posicionado dentro do simulador, desde que dentro do limite de visão da câmera;
+- Segmentar os objetos para extrair os seus atributos;
+- Extrair o atributo “Ponto da Base” e sua coordenada em pixel;
+- Encontrar a distância entre este ponto e o robô;
+- Transformar o ponto do referencial da imagem para o referencial do mundo e utilizar como coordenada de destino;
+- Controlar o robô de forma que ele chegue em um ponto a 30cm de distância da coordenada da base do objeto (regulação parcial);
+- Exibir as telas de imagem original, máscara de segmentação e imagem processada;
+- Informar a distância entre o robô e o objeto de destino, coordenada em pixel do ponto da base e a coordenada do objeto no mundo, ou por impressão no terminal ou por publicação no ROS (info ou publicação de mensagem);
+- A aplicação deverá ser executada a partir de um arquivo *.launch, que deverá iniciar todos os nós do projeto, caso seja utilizado mais de um nó, assumindo que o simulador já esteja em execução. Os seguintes elementos deverão ser entregues como parte da avaliação:
 
-Pacote ROS completo, com o nomenclatura AT_NOME_SOBRENOME.zip;
-Relatório contendo a descrição do(s) nó(s) desenvolvidos, os parâmetros utilizados, tais como limites da máscara, ganhos do controlador, dados do robô e demais configurações utilizadas, bem como os resultados da simulação, como imagens originais e segmentadas e máscara, e a estrutura do seu pacote (árvore de arquivos).
-Extra: realizar este mesmo trabalho fazendo a regulação para uma sequência de pelo menos dois ou mais objetos no ambiente. Para este caso, descreva no relatório qual deve ser a sequência que o robô deve seguir durante a operação.
+<p>------------------------------------</p>
 
 Qst2- O Aprendizado por Reforço é uma técnica de aprendizado de máquina que permite que um agente aprenda a melhor ação a ser tomada em um determinado estado a partir da interação com o ambiente em que está inserido. O objetivo do agente será acumular a maior recompensa possível durante cada época de treinamento. Uma das abordagens de aprendizado é o Deep Q-Learning (DQN), em que uma rede neural para estimar qual a ação que trará a maior recompensa futura durante o treinamento, dado um determinado estado. Com base nesses conceitos e utilizando o material disponibilizado em aula, realize o treinamento de um agente que seja capaz de pousar um drone em uma determinada posição do ambiente, como mostrado na Figura 2. Para isso, a partir dos valores inicialmente configurados, realize o ajuste dos seguintes hiperparâmetros responsáveis pelo processo de aprendizado:
 
